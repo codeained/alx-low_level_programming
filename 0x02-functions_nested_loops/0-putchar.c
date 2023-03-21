@@ -1,21 +1,18 @@
-#include "main.h"
+#include<unistd.h>
+
 
 /**
- * main - print _putchar
- * is written by codeained
- * Return: 0
+ * _putchar - function that prints puchar
+ * @c the character to print
+ *
+ * Return: 0 (Always).
  */
-int main(void)
+int main()
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
-	return (0);
-}
+	char str[]="_putchar\n";
+	int len = sizeof(str) - 1;
 
+	write(STDOUT_FILENO, str, len);
+
+	return 0;
+}
