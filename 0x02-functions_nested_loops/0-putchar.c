@@ -1,18 +1,22 @@
-#include<unistd.h>
+#include"main.h"
 
 
 /**
- * _putchar - function that prints puchar
- * @c the character to print
+ *main - entry point
  *
- * Return: 0 (Always).
+ * Return: Always 0
  */
-int main()
+
+int main(void)
 {
-	char str[]="_putchar\n";
-	int len = sizeof(str) - 1;
-
-	write(STDOUT_FILENO, str, len);
-
-	return 0;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
 }
