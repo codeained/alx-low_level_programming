@@ -20,6 +20,7 @@ void _puts_recursion(char *s)
 int main(void)
 {
 	char s[] = "Puts with recursion";
+
 	_puts_recursion(s);
 	return (0);
 }
